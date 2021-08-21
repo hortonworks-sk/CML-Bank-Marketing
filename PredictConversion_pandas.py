@@ -27,15 +27,14 @@ row_count = df_cut2.shape[0]
 df_cut2['conversion probability'] = np.random.randint(0,100, row_count)/300
 
 
-pdf = df_cut2
+
 
 spacing = dict(props=[('border-collapse', 'separate'), 
                                        ('border-spacing',  '50px 0px')])
 
 cm = sns.light_palette("lightblue", as_cmap=True)
 
-
-pdf.style.format({"surname": lambda x:x.upper()})\
+df_cut2.style.format({"surname": lambda x:x.upper()})\
     .format({"title": lambda x:x.upper()})\
     .background_gradient(cmap=cm, subset=['conversion probability'])\
     .set_table_styles([spacing])

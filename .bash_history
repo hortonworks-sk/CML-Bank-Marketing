@@ -135,3 +135,12 @@ cp CDSW-Melanoma2/demo/models/bottleneck_fc_model.h5 demo
 pwd
 ls
 rm -Rf CDSW-Melanoma2
+git status
+ls -all
+vi .gitignore
+ls
+pip3 uninstall sklearn
+pip3 install sklearn==0.21
+pip3 install -r requirements.txt
+pip3 install -r requirements.txt
+pip3 install -r requirements.txt
